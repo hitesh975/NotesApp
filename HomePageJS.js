@@ -1,3 +1,5 @@
+// Navigation button event listeners for HomePage
+
 document.getElementById("add").addEventListener("click", () => {
   window.location.href = "add_notes.html";
 });
@@ -13,3 +15,5 @@ document.getElementById("formulae").addEventListener("click", () => {
 document.getElementById("practice").addEventListener("click", () => {
   window.location.href = "practice.html";
 });
+
+//end of navigation button event listeners for HomePage
