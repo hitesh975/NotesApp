@@ -8,26 +8,28 @@
 
 .NotesContainer {
     width: 80%;
-    min-height: 300px;
     border: 2px solid black;
     padding: 10px;
     background-color: lightyellow;
-    overflow-y: auto;
     padding: 10px;
 }
 
 .note {
-    background-color: lightyellow;
-    margin: 0;
+    background-color: lightcoral;
+    border-radius: 10px;
+    margin: 20px;
     padding: 10px;
 }
 
-.Back {
+button.Back, button.clear {
     padding: 10px 20px;
     font-size: medium;
-    cursor: pointer;
-    background-color: lightcoral;
     border: none;
     border-radius: 5px;
     color: white;
+}
+
+button {
+    cursor: pointer;
+    background-color: lightcoral;
 }

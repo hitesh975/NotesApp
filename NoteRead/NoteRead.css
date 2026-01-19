@@ -1,0 +1,12 @@
+.NotesContainer {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.noteDisplay {
+    background-color: lightcoral;
+    width: 80%;
+    padding: 20px;
+    margin: 20px;
+}
