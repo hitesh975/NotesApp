@@ -7,18 +7,22 @@ document.getElementById("Back").addEventListener("click", () => {
 //Navigation button event listeners for add_notes page end
 
 //save button
-Notes = document.getElementById("notes");
-saveBtn = document.getElementById("saveBtnID");
-saveBtn.addEventListener("click", () => {
-  let existingNotes = JSON.parse(localStorage.getItem("notes") || "[]");
-  existingNotes.push(Notes.value);
-  localStorage.setItem("notes", JSON.stringify(existingNotes));
-  Notes.value = "";
+document.getElementById("saveBtnID").addEventListener("click", () => {
+  const Editor = document.getElementById("notes");
+
+  //get title
+  const titleElement = document.getElementById("titleID");
+  const titleText = titleElement.innerText.trim();
+  //get title end
+  localStorage.setItem(titleText, Editor.innerHTML);
+  Editor.innerHTML = "";
+  titleElement.innerHTML = "";
 });
 
 //save button end
 
 //clear button
 document.getElementById("clearBtnID").addEventListener("click", () => {
-  Notes.value = "";
+  Notes.textContent = "";
 });
+//clear button end
