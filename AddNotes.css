@@ -16,7 +16,7 @@
     resize: none;
 }
 
-.saveBtn, .Back{
+button{
     width: 100px;
     padding: 10px;
     margin: 20px auto;
