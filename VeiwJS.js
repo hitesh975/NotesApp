@@ -10,5 +10,7 @@ function renderNotes() {
     notesContainer.appendChild(noteDiv);
   });
 }
-console.log(localStorage.getItem("notes"));
 renderNotes();
+document.getElementById("BackBtnID").addEventListener("click", () => {
+  window.location.href = "index.html";
+});
