@@ -12,5 +12,5 @@ function renderNotes() {
 }
 renderNotes();
 document.getElementById("BackBtnID").addEventListener("click", () => {
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 });
