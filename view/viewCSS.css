@@ -1,37 +1,47 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
 }
 
 .NotesContainer {
-    width: 80%;
-    border: 2px solid black;
-    padding: 10px;
-    background-color: lightyellow;
-    padding: 10px;
+  width: 80%;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: lightyellow;
+  padding: 10px;
 }
 
 .note {
-    background-color: lightcoral;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+  background-color: lightcoral;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-button.Back, button.clear {
-    padding: 10px 20px;
-    font-size: medium;
-    border: none;
-    border-radius: 5px;
-    color: white;
+button.Back,
+button.clear {
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+  border-radius: 5px;
+  color: white;
 }
 
 button {
-    cursor: pointer;
-    background-color: lightcoral;
+  cursor: pointer;
+  background-color: lightcoral;
+}
+
+.searchbar {
+  width: 80%;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: lightgray;
+  margin-bottom: 20px;
+  margin: auto;
 }
