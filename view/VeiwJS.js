@@ -29,6 +29,7 @@ document.getElementById("clear").addEventListener("click", () => {
 document.querySelectorAll(".note").forEach((button) => {
   button.addEventListener("click", () => {
     const noteKey = button.dataset.noteKey;
-    window.location.href = `/NotesApp/NoteRead/NoteRead.html?note=noteKey`;
+    const encodedKey = encodeURIComponent(noteKey);
+    window.location.href = `/NotesApp/NoteRead/NoteRead.html?note=${encodedKey}`;
   });
 });
