@@ -8,7 +8,7 @@
 
 .textArea {
   width: 80%;
-  height: 60vh;
+  height: 80vh;
   font-size: large;
   padding: 10px;
   border: 2px solid lightsalmon;
@@ -46,4 +46,13 @@ button {
   font-size: x-large;
 }
 
-
+.description {
+  width: 80%;
+  height: 20vh;
+  font-size: medium;
+  padding: 10px;
+  border: 2px solid lightsalmon;
+  border-radius: 5px;
+  resize: none;
+  margin-top: 10px;
+}
