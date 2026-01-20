@@ -21,6 +21,7 @@ document.getElementById("saveBtnID").addEventListener("click", () => {
   //get title end
 
   const descriptionText = titleElement.innerText.trim() + descriptionCode; //key for description storage
+  console.log(titleText);
   localStorage.setItem(titleText, Editor.innerHTML); //key:value pair for note
   localStorage.setItem(
     descriptionText, //key for description

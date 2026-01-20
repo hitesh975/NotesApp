@@ -2,10 +2,14 @@ function renderNotes(key) {
   const notesContainer = document.getElementById("NotesContainer");
   const noteContent = localStorage.getItem(key);
   console.log("notes:" + noteContent);
+  console.log("key:" + key);
   const noteBtn = document.createElement("button");
   noteBtn.className = "note";
   noteBtn.dataset.noteKey = key;
-  noteBtn.innerHTML = key;
+  noteBtn.innerHTML = key.replace(
+    "237852572457426578624756274651450185316584168484638419849849684651651",
+    "",
+  );
   notesContainer.appendChild(noteBtn);
 }
 
@@ -19,7 +23,7 @@ const descriptionCode =
 if (TitleList.length > 0) {
   TitleList.forEach((title) => {
     if (title.endsWith(titleCode)) {
-      renderNotes(title.replace(titleCode, ""));
+      renderNotes(title);
     }
   });
 }
