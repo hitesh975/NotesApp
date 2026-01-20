@@ -1,8 +1,8 @@
 const params = new URLSearchParams(window.location.search);
 const encodedKeykey = params.get("note");
-console.log(encodedKeykey);
 const key = decodeURIComponent(encodedKeykey);
 const noteContent = localStorage.getItem(key);
+console.log(noteContent);
 
 noteContainer = document.getElementById("noteContainer");
 notes = document.createElement("div");

@@ -1,6 +1,7 @@
 function renderNotes(key) {
   const notesContainer = document.getElementById("NotesContainer");
   const noteContent = localStorage.getItem(key);
+  console.log("notes:" + noteContent);
   const noteBtn = document.createElement("button");
   noteBtn.className = "note";
   noteBtn.dataset.noteKey = key;
@@ -42,8 +43,6 @@ document.querySelectorAll(".note").forEach((button) => {
     //description
     const descriptionText = noteKey.replace(titleCode, "") + descriptionCode;
     const encodedDescription = encodeURIComponent(descriptionText);
-    console.log(noteKey);
-    console.log(encodedKey);
     window.location.href = `/NotesApp/NoteRead/NoteRead.html?note=${encodedKey}&description=${encodedDescription}`;
   });
 });

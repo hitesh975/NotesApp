@@ -21,7 +21,6 @@ document.getElementById("saveBtnID").addEventListener("click", () => {
   //get title end
 
   const descriptionText = titleElement.innerText.trim() + descriptionCode; //key for description storage
-
   localStorage.setItem(titleText, Editor.innerHTML); //key:value pair for note
   localStorage.setItem(
     descriptionText, //key for description
@@ -30,7 +29,6 @@ document.getElementById("saveBtnID").addEventListener("click", () => {
   Editor.innerHTML = "";
   titleElement.innerHTML = "";
   descriptionElement.innerHTML = "";
-  alert("Note Saved!");
 });
 
 //save button end
