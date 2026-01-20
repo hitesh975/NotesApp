@@ -45,3 +45,10 @@ button {
   margin-bottom: 20px;
   margin: auto;
 }
+
+.description {
+  font-size: medium;
+  margin-top: 10px;
+  border: 2px solid red;
+  padding: 10px;
+}

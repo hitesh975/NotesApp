@@ -6,6 +6,18 @@ function renderNotes(key) {
   const noteBtn = document.createElement("button");
   noteBtn.className = "note";
   noteBtn.dataset.noteKey = key;
+
+  const description = document.createElement("p");
+  const descriptionContent = localStorage.getItem(
+    key.replace(
+      "237852572457426578624756274651450185316584168484638419849849684651651",
+      "466543466466553465643566543565463526135526646332556146538564",
+    ),
+  );
+  description.className = "description";
+  description.innerHTML = descriptionContent;
+  noteBtn.appendChild(description); // ISSSSUUUUUUUEEEEEEEEEEEE PLS FIXXXXXXXXXXXXXXXXXXXXXXX description not showing
+
   noteBtn.innerHTML = key.replace(
     "237852572457426578624756274651450185316584168484638419849849684651651",
     "",
