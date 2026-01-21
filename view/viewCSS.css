@@ -49,6 +49,7 @@ button {
 .description {
   font-size: medium;
   margin-top: 10px;
-  border: 2px solid red;
+  background-color: rgb(197, 192, 192);
+  border-radius: 10px;
   padding: 10px;
 }
