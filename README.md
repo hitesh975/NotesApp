@@ -9,7 +9,8 @@ features:
     5. search by title
     6. add title to the notes
     7. add description 
-    8. description overlay in notes           list section(view page)
+    8. description overlay in notes           
+	   list section(view page)
 
 
 v2 to be made using REACT with much more features
@@ -28,4 +29,5 @@ main ideas:
        of the algorithm is too low 
     8. construct notes with textbook
        pdf input
-    9. make practice numericals and           questions
+    9. make practice numericals and
+	   questions
