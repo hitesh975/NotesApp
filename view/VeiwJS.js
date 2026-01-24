@@ -34,7 +34,21 @@ function renderNotes(key) {
 
   //svg icon
   //make later
-  deleteButton.innerHTML = "Delete";
+  deleteButton.innerHTML = `<img src="../images/delete.svg" 
+                             alt="Delete Icon" 
+                             class="deleteIcon" 
+                             height="30" 
+                             width="30"/>`;
+
+  //delete note event listener
+  deleteButton.addEventListener("click", (e) => {
+    e.stopPropagation(); //prevent triggering note view
+    const noteKey = noteBtn.dataset.noteKey;
+    const descriptionKey = noteKey.replace(titleCode, descriptionCode);
+    localStorage.removeItem(noteKey);
+    localStorage.removeItem(descriptionKey);
+    notesContainer.removeChild(noteBtn);
+  });
 
   notesContainer.appendChild(noteBtn);
   noteBtn.appendChild(deleteButton);
